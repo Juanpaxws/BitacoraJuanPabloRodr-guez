@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Juan Rodríguez</title>
+
+    <style>
+
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #aec5e7;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header{
+            padding: 40px 20px;
+            background-color: rgb(154, 146, 229);
+        }
+
+        h1{
+            color: white;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #d8b4fe,
+                0 0 20px #c084fc,
+                0 0 40px #a855f7,
+                0 0 80px #9333ea;
+        }
+
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .semana{
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px auto;
+            max-width: 1000px;
+            text-align: left;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+            border-left: 5px solid #cab8aa;
+
+            transition: all 0.3s ease;
+        }
+
+        .semana:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(38, 42, 255, 0.2);
+        }
+
+        .semana h2{
+            color: rgb(9, 2, 72);
+        }
+
+        /* PDF GRANDE */
+        iframe{
+            width: 100%;
+            height: 700px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* VIDEO */
+        video{
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(78, 70, 164);
+            background-color: rgb(71, 98, 144);
+            color: white;
+        }
+
+        footer img{
+            width: 90px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        footer img:hover{
+            transform: scale(1.2);
+        }
+
+        @media (max-width:600px){
+
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            iframe{
+                height: 500px;
+            }
+
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bitácora Juan Rodríguez</h1>
+    </header>
+
+    <main>
+
+        <!-- SEMANA 1 -->
+        <div class="semana">
+
+            <h2>Semana 1: Contenido página WEB</h2>
+
+            <h3>Entrada 1: Introducción</h3>
+
+            <p>
+                Esta semana aprendimos sobre arduinos,
+                sus tipos y funciones.
+            </p>
+
+            <!-- PDF GRANDE -->
+            <iframe src="Introducción Arduino Juan Rodríguez.pdf"></iframe>
+
+        </div>
+
+        <!-- SEMANA 2 -->
+        <div class="semana">
+
+            <h2>Semana 2</h2>
+
+            <video controls>
+                <source src="Juan Rodríguez.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Aprendímos a utilizar tinkercad y a realizar un arduino.
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <span>2026 © Juanpaxwss</span>
+
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png"
+             alt="Logo Colegio">
+
+    </footer>
+
+</body>
+</html>
